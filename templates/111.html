@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--容器留白-->
+<div class="container" style="border:1px blue dashed">
+    123
+</div>
+<!--占据全部窗口的容器-->
+<div class="container-fluid" style="border:1px green solid">
+    456
+</div>
+
+<!--栅格,一行最多12行-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">1</div>
+        <div class="col-sm-3">2</div>
+        <div class="col-sm-3">3</div>
+        <div class="col-sm-3">4</div>
+    </div>
+</div>
+
+<!--栅格拆分-->
+<div class="container">
+    <div class="row" style="border:1px red solid">
+        <div class="col-sm-3">1</div>
+        <div class="col-sm-6" style="border:1px yellow dashed">
+            <div class="col-sm-3">2</div>
+            <div class="col-sm-3">2</div>
+            <div class="col-sm-3">2</div>
+            <div class="col-sm-3">2</div>
+        </div>
+        <div class="col-sm-3">1</div>
+    </div>
+</div>
+
+<!--栅格偏移-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-sm-offset-3" style="border:1px red dashed">333</div>
+    </div>
+</div>
+
+<!--栅格另起一行-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">4</div>
+        <div class="col-sm-7">7</div>
+        <div class="col-sm-5">5</div>
+    </div>
+</div>
+
+<!--标题-->
+<h1>h1 <small>small</small></h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+
+<!--主体内容-->
+<p>主体内容</p>
+<p class="lead">lead</p>
+
+<!--内联文本-->
+内联 <mark>の</mark>文本
+
+<!--删除文本-->
+<del>删除文本</del>
+
+<!--插入文本-->
+<ins>插入文本</ins>
+
+<!--着重标签-->
+<strong>着重标签</strong>
+
+<!--斜体文字-->
+<em>斜体文字</em>
+
+<!--混合使用-->
+<del><ins><strong><em>混合使用</em></strong></ins></del>
+
+<!--文本对齐-->
+<p class="text-left">居左对齐</p>
+<p class="text-center">居中对齐</p>
+<p class="text-right">居右对齐</p>
+<p class="text-nowrap">文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行文字不换行</p>
+
+<!--大小写改变-->
+大写转小写 China
+<p class="text-lowercase">China</p>
+小写转大写 China
+<p class="text-uppercase">China</p>
+单词首字母大写 bRatain
+<p class="text-capitalize">bRatain uA</p>
+
+<!--列表-->
+无序列表
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+有序列表
+<ol>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ol>
+无样式列表
+<ul class="list-unstyled">
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+</ul>
+内联列表
+<ol class="list-inline">
+    <li>R</li>
+    <li>G</li>
+    <li>B</li>
+</ol>
+水平列表
+<dl class="dl-horizontal">
+    <dt>Python</dt>
+    <dd>1</dd>
+    <dd>2</dd>
+    <dt>Java</dt>
+    <dd>1</dd>
+    <dd>2</dd>
+</dl>
+
+<!--表格-->
+<table class="table">
+    <thead>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    </tbody>
+</table>
+带表框的表格
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    </tbody>
+</table>
+条纹状表格
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    </tbody>
+</table>
+鼠标悬停
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    </tbody>
+</table>
+紧缩表格
+
+<table class="table table-condensed">
+    <thead>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+    </tbody>
+</table>
+表格状态类
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr class="active">
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr class="warning">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr class="info">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr class="danger">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td class="active">1</td>
+        <td class="success">2</td>
+        <td class="info">3</td>
+    </tr>
+    </tbody>
+</table>
+
+<!--表单-->
+<form action="" class="form-inline">
+    <div class="form-group">
+        <label for="name">
+            用户名
+        </label>
+        <input type="text" id="name" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="pwd">
+            密码
+        </label>
+        <input type="password" id="pwd" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="salary">
+            金额
+        </label>
+        <div class="input-group">
+            <div class="input-group-addon">
+                $
+            </div>
+            <input type="text" class="form-control" id="salary">
+            <div class="input-group-addon">
+                .00
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="file">
+            请选择文件
+        </label>
+        <input type="file" id="file">
+        <p class="help-block">上传文件大小不能超过1G</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox">1
+        </label>
+        <label>
+            <input type="checkbox">2
+        </label>
+        <label>
+            <input type="checkbox">3
+        </label>
+    </div>
+    <select class="form-control">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+</form>
+<hr>
+<h3>水平排列的表单</h3>
+<form action="" class="form-horizontal">
+    <div class="form-group">
+        <label for="name1" class="col-sm-2">
+             用户名
+        </label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="name1">
+        </div>
+    </div>
+</form>
+<hr>
+<h3>复选框单选框</h3>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" value="">
+        Nowara Shinnosuke
+    </label>
+</div>
+<div class="checkbox disabled">
+    <label>
+        <input type="checkbox" value="">
+        Doraemon
+    </label>
+</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" value="">
+        Katarina
+    </label>
+</div>
+
+<div class="radio">
+    <label>
+        <input type="radio" name="radio">
+        Nowara Shinnosuke
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="radio">
+        Doraemon
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="radio" checked="checked">
+        Katarina
+    </label>
+</div>
+<hr>
+<h3>下拉列表</h3>
+<select class="form-control">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+多选
+<select class="form-control" multiple>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+</select>
+
+<h3>静态控件</h3>
+<form action="" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">
+            Email
+        </label>
+        <div class="col-sm-10">
+            <p class="form-control-static">example@example.com</p>
+        </div>
+    </div>
+</form>
+
+<h3>校验状态</h3>
+<div class="form-group has-success">
+    <label class="col-sm-2 control-label">
+        Email
+    </label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control">
+    </div>
+</div>
+<h3>设置图标</h3>
+<form action="" class="form-horizontal">
+    <div class="form-group has-success has-feedback">
+        <label class="col-sm-2 control-label">
+            Email
+        </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control">
+            <span class="glyphicon glyphicon-flash form-control-feedback"></span>
+        </div>
+    </div>
+</form>
+<h3>输入框设置样式</h3>
+<form action="" class="form-horizontal">
+    <div class="form-group has-success has-feedback">
+        <label class="col-sm-2 control-label">
+            Email
+        </label>
+        <div class="col-sm-10">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    @
+                </span>
+                <input type="text" class="form-control">
+            </div>
+            <span class="glyphicon glyphicon-flash form-control-feedback"></span>
+        </div>
+    </div>
+</form>
+<hr>
+<h3>控件尺寸</h3>
+<div class="form-group has-success has-feedback">
+    <label class="col-sm-2 control-label">
+        Email
+    </label>
+    <div class="col-sm-10">
+        <div class="input-group">
+            <span class="input-group-addon">
+                @
+            </span>
+            <input type="text" class="form-control input-sm">
+        </div>
+        <span class="glyphicon glyphicon-flash form-control-feedback"></span>
+    </div>
+</div>
+<hr>
+<h3>按钮</h3>
+<a href="" class="btn btn-default">a</a>
+<button class="btn btn-default active">button</button>
+<input type="submit" value="input" class="btn btn-default">
+<hr>
+<h3>按钮样式</h3>
+<button class="btn btn-default">button</button>
+<button class="btn btn-success">button</button>
+<button class="btn btn-info">button</button>
+<button class="btn btn-warning">button</button>
+<button class="btn btn-danger">button</button>
+<button class="btn btn-primary">button</button>
+<button class="btn btn-link">button</button>
+<hr>
+<h3>按钮尺寸</h3>
+<button class="btn btn-default btn-lg">button</button>
+<button class="btn btn-default">button</button>
+<button class="btn btn-default btn-sm">button</button>
+<button class="btn btn-default btn-xs">button</button>
+<hr>
+<h3>图片生成</h3>
+<img src="../static/image/QQ截图20191106100414.png" alt="" class="img-circle">
+<img src="../static/image/QQ截图20191106100414.png" alt="" class="img-rounded">
+<img src="../static/image/QQ截图20191106100414.png" alt="" class="img-thumbnail">
+<hr>
+<h3>辅助类</h3>
+<h5>文本颜色</h5>
+<p class="text-muted">文本文本文本文本文本</p>
+<p class="text-primary">文本文本文本文本文本</p>
+<p class="text-success">文本文本文本文本文本</p>
+<p class="text-info">文本文本文本文本文本</p>
+<p class="text-warning">文本文本文本文本文本</p>
+<p class="text-danger">文本文本文本文本文本</p>
+<hr>
+<h4>背景色</h4>
+<p class="bg-primary">文本背景</p>
+<p class="bg-info">文本背景</p>
+<p class="bg-success">文本背景</p>
+<p class="bg-warning">文本背景</p>
+<p class="bg-danger">文本背景</p>
+<hr>
+<h4>关闭按钮</h4>
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<hr>
+<h4>三角符号</h4>
+<span class="caret"></span>
+<hr>
+<h3>图标</h3>
+<span class="glyphicon glyphicon-sunglasses"></span>
+<button class="btn btn-default">
+    <span class="glyphicon glyphicon-flash"></span>
+    Button
+</button>
+<hr>
+<h3>下拉菜单</h3>
+
+<div class="dropdown bg-warning">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        点我下拉 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="">灬</a></li>
+        <li><a href="">灬</a></li>
+        <li><a href="">灬</a></li>
+    </ul>
+</div>
+
+<!--<div class="dropdown">-->
+  <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+    <!--Dropdown-->
+    <!--<span class="caret"></span>-->
+  <!--</button>-->
+  <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+    <!--<li><a href="#">Action</a></li>-->
+    <!--<li><a href="#">Another action</a></li>-->
+    <!--<li><a href="#">Something else here</a></li>-->
+    <!--<li role="separator" class="divider"></li>-->
+    <!--<li><a href="#">Separated link</a></li>-->
+  <!--</ul>-->
+<!--</div>-->
+<br>
+<hr>
+<h3>下拉菜单添加标题及分割线</h3>
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-heart"></span>点我下拉 <span class="caret"></span>
+    </button>
+    <!--<ul class="dropdown-menu">-->
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+        <li class="dropdown-header">Python</li>
+        <li><a href="">Middle</a></li>
+        <li><a href="">Higher</a></li>
+        <li role="separator" class="divider"></li>
+        <li class="dropdown-header">Java</li>
+        <li><a href="">Lower</a></li>
+        <li><a href="">High</a></li>
+    </ul>
+</div>
+<hr>
+<h3>按钮组嵌套下拉菜单</h3>
+<div class="btn-group">
+    <button class="btn btn-default">button</button>
+    <button class="btn btn-default">button</button>
+    <div class="btn-group">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            点我下拉 <span class="glyphicon glyphicon-heart-empty"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+<h3>按钮组自适应父元素</h3>
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-default">a</a>
+    <a href="#" class="btn btn-default">a</a>
+</div>
+<br>
+<div class="btn-group btn-group-justified">
+    <div class="btn-group">
+        <button class="btn btn-default">button</button>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-default">button</button>
+    </div>
+</div>
+<hr>
+<h3>分列式的下拉菜单</h3>
+<div class="btn-group">
+    <button class="btn btn-primary">button</button>
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+<hr>
+<h3>导航条</h3>
+<h5>标签页导航</h5>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="">Home</a></li>
+    <li><a href="">Next</a></li>
+    <li><a href="">Prev</a></li>
+</ul>
+<hr>
+<h5>胶囊式标签页</h5>
+<ul class="nav nav-pills">
+    <li class="active"><a href="">Home</a></li>
+    <li><a href="">Next</a></li>
+    <li><a href="">Prev</a></li>
+</ul>
+<hr>
+<h5>自适应父容器</h5>
+<ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="">Home</a></li>
+    <li><a href="">Next</a></li>
+    <li><a href="">Prev</a></li>
+</ul>
+<hr>
+<h5>带有下拉菜单的标签页</h5>
+<ul class="nav nav-tabs">
+    <li><a href="">Home</a></li>
+    <li><a href="">Next</a></li>
+    <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            点我下拉 <span class="glyphicon glyphicon-flash"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+<ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
